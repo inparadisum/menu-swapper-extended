@@ -84,6 +84,14 @@ public interface MenuSwapperConfig extends Config
 	}
 
 	@ConfigItem(
+		keyName = "swapConBuild",
+		name = "Swap Build",
+		description = "Swap the construction build option to left-click.",
+		section = objectSection
+	)
+	default boolean swapConBuild() { return false; }
+
+	@ConfigItem(
 		keyName = "swapBuyPlank",
 		name = "Buy-Plank",
 		description = "Swap Talk-to with Buy-Plank on Sawmill Operator",

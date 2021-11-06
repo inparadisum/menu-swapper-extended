@@ -136,6 +136,8 @@ public class MenuSwapperPlugin extends Plugin
 
 		swap("open (normal)", "open (private)", config::swapGodWarsDoor);
 		swap("close", "search", config::swapSearch);
+		swap("examine", "table space", "build", config::swapConBuild);
+		swap("examine", "mahogany table", "remove", config::swapConBuild);
 		swap("shut", "search", config::swapSearch);
 		swap("shoo-away", "pet", config::swapStrayDog);
 		swap("standard", "slayer", config::dagganothKingsLadder);
